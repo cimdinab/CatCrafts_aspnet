@@ -1,7 +1,7 @@
 [
 	{
 		"id": "tabbycat-sleeping",
-		"maker": "@tabbycat",
+		"type": "@tabbycat",
 		"img": "https://images.unsplash.com/photo-1500603720222-eb7a1f997356?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80",
 		"url": "https://unsplash.com/photos/8NXmaXg5xL0",
 		"title": "Phasellus dapibus non odio sollicitudin",
@@ -9,7 +9,7 @@
 	},
 	{
 		"id": "tabbycat-grass",
-		"maker": "tabbycat",
+		"type": "tabbycat",
 		"img": "https://images.unsplash.com/photo-1596700028085-2225e01bfb5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
 		"url": "https://unsplash.com/photos/ZTXY0LCmiOI",
 		"title": "Quisque at blandit dolor.",
@@ -17,7 +17,7 @@
 	},
 	{
 		"id": "tabbycat-kitten",
-		"maker": "@tabbycat",
+		"type": "@tabbycat",
 		"img": "https://images.unsplash.com/photo-1597174641019-bc8df1d3d5fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
 		"url": "https://unsplash.com/photos/72iodDy6B8g",
 		"title": "Vestibulum ut pellentesque ante",
@@ -25,7 +25,7 @@
 	},
 	{
 		"id": "tabbycat-walk",
-		"maker": "tabbycat",
+		"type": "tabbycat",
 		"img": "https://images.unsplash.com/photo-1493406300581-484b937cdc41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
 		"url": "https://unsplash.com/photos/AL2-t0GrSko",
 		"title": "Fusce a ante ut eros fringilla vestibulum at vitae nisl",
@@ -33,7 +33,7 @@
 	},
 	{
 		"id": "whitecat-sit",
-		"maker": "whitecat",
+		"type": "whitecat",
 		"img": "https://images.unsplash.com/photo-1508710599415-734cc9b287fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
 		"url": "https://unsplash.com/photos/OcOYahwb6Zk",
 		"title": "Donec interdum euismod elementum",
@@ -41,7 +41,7 @@
 	},
 	{
 		"id": "whitecat-kitten",
-		"maker": "whitecat",
+		"type": "whitecat",
 		"img": "https://images.unsplash.com/photo-1597400173301-985cf668c651?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80",
 		"url": "https://unsplash.com/photos/t0qAifY1fR0",
 		"title": "Mauris vel erat a nunc aliquet",
@@ -49,7 +49,7 @@
 	},
 	{
 		"id": "whitecat-stare",
-		"maker": "whitecat",
+		"type": "whitecat",
 		"img": "https://images.unsplash.com/photo-1513421181656-4446bef18317?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80",
 		"url": "https://unsplash.com/photos/t2I_ROU8rhI",
 		"title": "Aenean sodales nisi eget urna ullamcorper",
@@ -57,7 +57,7 @@
 	},
 	{
 		"id": "whitecat-fluffy",
-		"maker": "whitecat",
+		"type": "whitecat",
 		"img": "https://images.unsplash.com/photo-1563468706294-7e60627ec250?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
 		"url": "https://unsplash.com/photos/mBsStJrf-Tc",
 		"title": "Ut auctor orci ut",
@@ -65,7 +65,7 @@
 	},
 	{
 		"id": "bigcat-leopard",
-		"maker": "bigcat",
+		"type": "bigcat",
 		"img": "https://images.unsplash.com/photo-1531739294374-da71ccf9445b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
 		"url": "https://unsplash.com/photos/5njevSym76g",
 		"title": "Cras tristique suscipit rutrum",
@@ -73,7 +73,7 @@
 	},
 	{
 		"id": "bigcat-tiger",
-		"maker": "bigcat",
+		"type": "bigcat",
 		"img": "https://images.unsplash.com/photo-1500463959177-e0869687df26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
 		"url": "https://unsplash.com/photos/IDO_a-dxrCY",
 		"title": "Nam facilisis orci vel egestas vulputate",
@@ -81,7 +81,7 @@
 	},
 	{
 		"id": "notacat-fox",
-		"maker": "notacat",
+		"type": "notacat",
 		"img": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80",
 		"url": "https://unsplash.com/photos/xUUZcpQlqpM",
 		"title": "Curabitur elementum arcu sed",
@@ -89,7 +89,7 @@
 	},
 	{
 		"id": "notacat-raccoon",
-		"maker": "notacat",
+		"type": "notacat",
 		"img": "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
 		"url": "https://unsplash.com/photos/6GMq7AGxNbE",
 		"title": "Etiam vel lectus commodo",
@@ -97,7 +97,7 @@
 	},
 	{
 		"id": "notacat-weasel",
-		"maker": "notacat",
+		"type": "notacat",
 		"img": "https://images.unsplash.com/photo-1548714859-18c34a4c384a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
 		"url": "https://unsplash.com/photos/PSxIoipDUZ4",
 		"title": "Pellentesque fermentum",
@@ -105,7 +105,7 @@
 	},
 	{
 		"id": "bigcat-lion",
-		"maker": "bigcat",
+		"type": "bigcat",
 		"img": "https://images.unsplash.com/photo-1513754537542-f85cde07305a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
 		"url": "https://unsplash.com/photos/C32BBKEcmOg",
 		"title": "Nulla vel nisl sit amet nisi",
@@ -113,7 +113,7 @@
 	},
 	{
 		"id": "bigcat-cheetah",
-		"maker": "bigcat",
+		"type": "bigcat",
 		"img": "https://images.unsplash.com/photo-1554457685-e54886f01eba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
 		"url": "https://www.instagram.com/p/BEXlpiZCnJ3/",
 		"title": "Duis sit amet ex consectetur",

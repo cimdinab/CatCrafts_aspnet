@@ -8,3 +8,15 @@
     <h1 class="display-4">Cat Crafts</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<div class="card-columns">
+    @foreach (var cat in Model.Cats)
+    {
+        <div class="card">
+            <img class="card-img-top" src="@cat.Image"/>
+            <div class="card-body">
+                <h5 class="card-title">@cat.Title</h5>
+            </div>
+        </div>
+    }
+</div>
