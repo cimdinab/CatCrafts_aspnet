@@ -7,7 +7,8 @@
     "Title": "Phasellus dapibus non odio sollicitudin",
     "Description": "Vivamus quis sollicitudin lectus. Cras vulputate, dolor et volutpat finibus.",
     "Ratings": [
-      5
+      5,
+      1
     ]
   },
   {
@@ -53,7 +54,9 @@
     "Url": "https://unsplash.com/photos/t0qAifY1fR0",
     "Title": "Mauris vel erat a nunc aliquet",
     "Description": "Proin interdum fermentum odio quis tempus. Nam non lacus sed dolor rhoncus ultrices nec sed libero.",
-    "Ratings": null
+    "Ratings": [
+      3
+    ]
   },
   {
     "Id": "whitecat-stare",
@@ -98,7 +101,9 @@
     "Url": "https://unsplash.com/photos/xUUZcpQlqpM",
     "Title": "Curabitur elementum arcu sed",
     "Description": "Sed et consectetur dolor, nec efficitur magna. In pretium ultrices augue at consectetur. Etiam nec tempor nisl, id aliquam lacus.",
-    "Ratings": null
+    "Ratings": [
+      2
+    ]
   },
   {
     "Id": "notacat-raccoon",
@@ -107,7 +112,9 @@
     "Url": "https://unsplash.com/photos/6GMq7AGxNbE",
     "Title": "Etiam vel lectus commodo",
     "Description": "Phasellus lobortis sagittis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-    "Ratings": null
+    "Ratings": [
+      4
+    ]
   },
   {
     "Id": "notacat-weasel",

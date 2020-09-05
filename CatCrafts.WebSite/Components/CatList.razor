@@ -24,8 +24,8 @@
     }
 </div>
 
-@if(selectedCat != null)
-{   
+@if (selectedCat != null)
+{
     <div class="modal fade" id="catModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -45,6 +45,26 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    @if (voteCount == 0)
+                    {
+                        <span>Be the first to vote!</span>
+                    }
+                    else
+                    {
+                        <span>@voteCount @voteLabel</span>
+                    }
+                    @for (int i = 0; i < 5; i++)
+                    {
+                        var currentStar = i;
+                        if (i <= currentRating)
+                        {
+                            <span class="fas fa-heart" @onclick="(e => SubmitRating(currentStar))"></span>
+                        }
+                        else
+                        {
+                            <span class="far fa-heart" @onclick="(e => SubmitRating(currentStar))"></span>
+                        }
+                    }
                 </div>
             </div>
         </div>
@@ -59,5 +79,33 @@
     {
         selectedCatId = catId;
         selectedCat = CatService.GetCats().First(x => x.Id == catId);
+        GetCurrentRating();
+    }
+
+    int currentRating = 0;
+    int voteCount = 0;
+    string voteLabel;
+
+    void GetCurrentRating()
+    {
+        if (selectedCat.Ratings == null)
+        {
+            currentRating = 0;
+            voteCount = 0;
+        }
+        else
+        {
+            voteCount = selectedCat.Ratings.Count();
+            voteLabel = voteCount > 1 ? "Votes" : "Vote";
+            currentRating = selectedCat.Ratings.Sum() / voteCount;
+        }
+        System.Console.WriteLine($"Current rating for {selectedCat.Id}: {currentRating}");
+    }
+
+    void SubmitRating(int rating)
+    {
+        System.Console.WriteLine($"Rating received for {selectedCat.Id}: {rating}");
+        CatService.AddRating(selectedCatId, rating);
+        SelectCat(selectedCatId);
     }
 }
