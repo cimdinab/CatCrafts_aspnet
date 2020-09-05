@@ -1,10 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
+using CatCrafts.WebSite.Models;
 using CatCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +28,7 @@ namespace CatCrafts.WebSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllers();
             services.AddTransient<JsonFileCatsService>();
         }
 
@@ -52,6 +56,13 @@ namespace CatCrafts.WebSite
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
+                //endpoints.MapGet("/cats", (context) =>
+                //{
+                //    var cats = app.ApplicationServices.GetService<JsonFileCatsService>().GetCats();
+                //    var json = JsonSerializer.Serialize<IEnumerable<Cat>>(cats);
+                //    return context.Response.WriteAsync(json);
+                //});
             });
         }
     }

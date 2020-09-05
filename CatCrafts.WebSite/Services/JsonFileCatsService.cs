@@ -32,6 +32,37 @@ namespace CatCrafts.WebSite.Services
                     });
             }
         }
+
+        public void AddRating(string catId, int rating)
+        {
+            var cats = GetCats();
+
+            //LINQ
+            var query = cats.First(x => x.Id == catId);
+
+            if (query.Ratings == null)
+            {
+                query.Ratings = new int[] { rating };
+            }
+            else
+            {
+                var ratings = query.Ratings.ToList();
+                ratings.Add(rating);
+                query.Ratings = ratings.ToArray();
+            }
+
+            using (var outputStream = File.OpenWrite(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<Cat>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                cats
+                );
+            }
+        }
     }
 
 }
