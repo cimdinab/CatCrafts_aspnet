@@ -1,4 +1,5 @@
 ﻿@page
+@using CatCrafts.WebSite.Components
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -9,14 +10,6 @@
     
 </div>
 
-<div class="card-columns">
-    @foreach (var cat in Model.Cats)
-    {
-        <div class="card">
-            <img class="card-img-top" src="@cat.Image"/>
-            <div class="card-body">
-                <h5 class="card-title">@cat.Title</h5>
-            </div>
-        </div>
-    }
-</div>
+@(await Html.RenderComponentAsync<CatList>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>

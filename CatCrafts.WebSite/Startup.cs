@@ -28,6 +28,7 @@ namespace CatCrafts.WebSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddServerSideBlazor();
             services.AddControllers();
             services.AddTransient<JsonFileCatsService>();
         }
@@ -57,6 +58,7 @@ namespace CatCrafts.WebSite
             {
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
+                endpoints.MapBlazorHub();
                 //endpoints.MapGet("/cats", (context) =>
                 //{
                 //    var cats = app.ApplicationServices.GetService<JsonFileCatsService>().GetCats();

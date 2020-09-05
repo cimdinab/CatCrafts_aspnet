@@ -1,0 +1,63 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@using CatCrafts.WebSite.Models
+@using CatCrafts.WebSite.Services
+@inject JsonFileCatsService CatService
+
+<div class="card-columns">
+    @foreach (var cat in CatService.GetCats())
+    {
+        <div class="card">
+            <img class="card-img-top" src="@cat.Image" />
+            <div class="card-body">
+                <h5 class="card-title">@cat.Title</h5>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">
+                    <button @onclick="(e => SelectCat(cat.Id))"
+                            data-toggle="modal" data-target="#catModal" class="btn btn-primary">
+                        More Info
+                    </button>
+                </small>
+            </div>
+        </div>
+
+    }
+</div>
+
+@if(selectedCat != null)
+{   
+    <div class="modal fade" id="catModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productTitle">@selectedCat.Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-img" style="background-image: url('@selectedCat.Image');">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">@selectedCat.Description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    Cat selectedCat = new Cat();
+    string selectedCatId;
+
+    void SelectCat(string catId)
+    {
+        selectedCatId = catId;
+        selectedCat = CatService.GetCats().First(x => x.Id == catId);
+    }
+}
